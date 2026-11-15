@@ -1,0 +1,99 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Braimah Emmanuel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">B<span>.</span>E</a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html" class="active">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <a href="contact.html" class="nav-button">Let's Connect</a>
+    </nav>
+</header>
+
+<main class="planner-page">
+
+    <section class="page-heading">
+        <p class="completedabel">STAY ORGANIZED</p>
+        <h1>Academic <span>Planner.</span></h1>
+        <p>Plan your studies, manage assignments and keep track of your academic goals.</p>
+    </section>
+
+    <section class="planner-container">
+
+        <div class="planner-intro">
+            <h2>My Study Tasks</h2>
+            <p>Add a task below and manage your academic activities.</p>
+        </div>
+
+        <form id="taskForm" class="task-form">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter an academic task..."
+                required
+            >
+
+            <input
+                type="date"
+                id="taskDate"
+                required
+            >
+
+            <button type="submit" class="btn btn-primary">
+                + Add Task
+            </button>
+
+        </form>
+
+        <div class="task-summary">
+            <div class="summary-card">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="summary-card">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="summary-card">
+                <h3 id="pendingTasks">0</h3>
+                <p>Pending</p>
+            </div>
+        </div>
+
+        <div class="task-list-section">
+            <h2>My Tasks</h2>
+
+            <div id="taskList">
+                <p class="empty-message">No tasks yet. Add your first task!</p>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Braimah Emmanuel. Built with curiosity and code.</p>
+</footer>
+
+</body>
+</html>
