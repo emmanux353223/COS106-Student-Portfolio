@@ -1,0 +1,348 @@
+    background: linear-gradient(135deg, #10284c, #07111f);
+}
+
+.phishing-visual {
+    background: linear-gradient(135deg, #20234a, #101126);
+}
+
+.network-visual {
+    background: linear-gradient(135deg, #073c49, #101c31);
+}
+
+.visual-symbol {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.visual-caption {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #8dc9ff;
+    font-weight: 700;
+}
+
+.visual-line {
+    height: 4px;
+    width: 100px;
+    background: var(--primary);
+    border-radius: 10px;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+.short-line {
+    width: 65px;
+    margin-top: 7px;
+    opacity: 0.4;
+}
+
+.warning-box {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: 1px solid #ffbd69;
+    border-radius: 5px;
+    color: #ffbd69;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.network-nodes {
+    display: flex;
+    gap: 25px;
+    margin-top: 18px;
+    color: #00d6ff;
+    font-size: 20px;
+}
+
+.project-details {
+    padding: 23px;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.project-meta > span:first-child {
+    color: var(--secondary);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.project-status {
+    font-size: 10px;
+    color: #ffce85;
+    background: rgba(255,190,100,0.1);
+    padding: 5px 9px;
+    border-radius: 20px;
+}
+
+.project-details h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.project-details > p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+    min-height: 90px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.project-tags span {
+    background: var(--surface-light);
+    color: #a8cfff;
+    border-radius: 4px;
+    padding: 6px 9px;
+    font-size: 10px;
+}
+
+.project-link {
+    display: inline-block;
+    color: var(--secondary);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    color: white;
+}
+
+.project-message {
+    text-align: center;
+    padding: 75px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.project-message h2 {
+    max-width: 650px;
+    margin: auto;
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+.project-message h2 span {
+    color: var(--primary);
+}
+
+.project-message > p:last-child {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* 9. FOOTER */
+
+.footer {
+    background: #060b13;
+    border-top: 1px solid var(--border);
+    padding: 25px 7%;
+    text-align: center;
+}
+
+.footer p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* 10. ANIMATIONS */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content,
+.hero-image,
+.page-heading,
+.project-card {
+    animation: fadeUp 0.7s ease both;
+}
+
+/* 11. TABLET RESPONSIVENESS */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 16px 5%;
+    }
+
+    .nav-links {
+        gap: 13px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero {
+        gap: 25px;
+        padding: 65px 6%;
+    }
+
+    .image-frame {
+        width: 250px;
+        height: 310px;
+    }
+}
+
+/* 12. MOBILE RESPONSIVENESS */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 4%;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 55px 7%;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 39px;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-info {
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .image-frame {
+        width: 230px;
+        height: 280px;
+    }
+
+    .about-preview {
+        padding: 55px 7%;
+    }
+
+    .about-page {
+        padding: 35px 7%;
+    }
+
+    .bio-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-section {
+        padding: 35px 0;
+    }
+
+    .projects-page {
+        padding: 30px 7%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-details > p {
+        min-height: auto;
+    }
+
+    .project-message {
+        padding: 50px 18px;
+    }
+
+    .project-message h2 {
+        font-size: 24px;
+    }
+
+    .page-heading {
+        padding: 45px 15px 25px;
+    }
+
+/* 13. SMALL PHONE RESPONSIVENESS */
+@media (max-width: 380px) {
+    .nav-links {
+        gap: 9px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .page-heading h1 {
+        font-size: 32px;
+    }
+
+    .project-details {
+        padding: 17px;
+    }
+} /* <--- Closes @media (max-width: 380px) */
+
+@media (max-width: 650px) {
+    .project-details {
+        padding: 17px;
+    }
+} /* <--- Closes @media (max-width: 650px) */
+   } 
+  }
